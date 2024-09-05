@@ -21,6 +21,7 @@ const ToDoForm = ({ addTodo }) => {
         onChange={(e) => setTitle(e.target.value)}
         required
       />
+      <br />
       <input
         type="text"
         placeholder="Description"
@@ -28,6 +29,7 @@ const ToDoForm = ({ addTodo }) => {
         onChange={(e) => setDescription(e.target.value)}
         required
       />
+      <br />
       <button type="submit">Add Todo</button>
     </form>
   );
