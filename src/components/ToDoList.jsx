@@ -8,7 +8,7 @@ const ToDoList = ({ todos, updateTodo, deleteTodo }) => {
   const handleEdit = (todo) => {
     setEditingId(todo._id);
     setUpdatedTitle(todo.title);
-    setUpdatedDescription(todo.description);
+    setUpdatedDescription(todo.desrciption);
   };
 
   const handleUpdate = (id) => {
