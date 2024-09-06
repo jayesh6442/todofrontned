@@ -36,7 +36,7 @@ const App = () => {
   // Update a todo
   const updateTodo = async (id, title, desrciption) => {
     try {
-      await axios.put("http://localhost:3000/put", {
+      await axios.put("https://todo-s2x8.onrender.com/put", {
         id,
         title,
         desrciption,
@@ -50,7 +50,7 @@ const App = () => {
   // Delete a todo
   const deleteTodo = async (id) => {
     try {
-      await axios.delete("http://localhost:3000/delete", {
+      await axios.delete("https://todo-s2x8.onrender.com/delete", {
         data: { todoId: id },
       });
       fetchTodos(); // Refresh todo list after deleting
