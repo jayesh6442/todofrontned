@@ -23,7 +23,7 @@ const App = () => {
   // Add a new todo
   const addTodo = async (title, desrciption) => {
     try {
-      await axios.post("http://localhost:3000/create", {
+      await axios.post("https://todo-s2x8.onrender.com/create", {
         title,
         desrciption,
       });
