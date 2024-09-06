@@ -1,4 +1,4 @@
-import  { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import axios from "axios";
 import ToDoForm from "./components/ToDoForm";
 import ToDoList from "./components/ToDoList";
@@ -9,7 +9,7 @@ const App = () => {
   // Fetch todos from backend
   const fetchTodos = async () => {
     try {
-      const response = await axios.get("http://localhost:3000");
+      const response = await axios.get("https://todo-s2x8.onrender.com/");
       setTodos(response.data);
     } catch (error) {
       console.error("Error fetching todos:", error);
